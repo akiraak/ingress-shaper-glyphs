@@ -52,8 +52,16 @@ function glyph_info(word) {
   //console.log('==============' + word + '==============');
   for(var i = 0; i < glyph_infos.length; i++) {
     //console.log(glyph_infos[i]);
-    if(glyph_infos[i]['en'].toLowerCase() == word.toLowerCase()) {
+    var info = glyph_infos[i];
+    if(info['en'].toLowerCase() == word.toLowerCase()) {
       return glyph_infos[i];
+    }
+    //var info['en_alts']
+    for(var j = 0; j < info['en_alts'].length; j++) {
+      var en_alt = info['en_alts'][j];
+      if(en_alt.toLowerCase() == word.toLowerCase()) {
+        return info;
+      }
     }
   }
   return null;
