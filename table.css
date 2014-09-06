@@ -78,6 +78,15 @@ h1 {
   font-size: 24px;
 }
 
+#table .count-header {
+  background-color: #BBB;
+  font-size: 12px;
+  color: 0;
+  padding: 4px 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 #table ul li {
   display: inline-block;
   list-style:none;

@@ -1,14 +1,30 @@
 $(function() {
 var version = "v1.1.0";
 //var baseUrl = "//cdn.rawgit.com/akiraak/ingress-shaper-glyphs/" + version + "/dist/";
-var baseUrl = "//cdn.rawgit.com/akiraak/ingress-shaper-glyphs/master/dist/";
+var baseUrl = "//rawgit.com/akiraak/ingress-shaper-glyphs/master/dist/";
 
 var sequences = null;
 var glyph_infos = null;
 
+function sort_glyphs(val1, val2){
+  if(val1.length == val2.length) {
+    if(val1.join('') >= val2.join('')) {
+      return 1;
+    } else {
+      return -1;
+    }
+  } else if(val1.length >= val2.length){
+    return 1;    
+  }
+  return -1;
+}
+
 $.get(baseUrl + 'sequences.json', null, finish_load_sequences);
 function finish_load_sequences(data) {
   sequences = data;
+  // ソート
+  sequences = sequences.sort(sort_glyphs);
+
   $.get(baseUrl + 'glyphs.json', null, finish_load_glyph_infos);
 }
 
@@ -19,9 +35,13 @@ function finish_load_glyph_infos(data) {
 
 function render_sequences() {
   var $table = $('#table');
+  var count = 0;
   for(var i = 0; i < sequences.length; i++) {
+    if(count < sequences[i].length) {
+      $table.append('<div class="count-header">' + sequences[i].length + '単語</div>')  
+      count = sequences[i].length;
+    }
     $table.append(build_sequence(sequences[i]));
-    //break;
   }
 }
 
