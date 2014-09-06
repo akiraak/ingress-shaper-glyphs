@@ -79,7 +79,7 @@
 ,
 {"code":"01166989","memrise_level":6,"order_in_level":13,"en":"Escape","en_alts":[],"ja":"逃避","ja_alts":[],"node_count":5,"memrise_index":"06-13"}
 ,
-{"code":"0a899a","memrise_level":2,"order_in_level":11,"en":"Evolution","en_alts":["Success"],"ja":"進化","ja_alts":["成功"],"node_count":4,"memrise_index":"02-11"}
+{"code":"0a899a","memrise_level":2,"order_in_level":11,"en":"Evolution","en_alts":["Success", "Success", "Progress"],"ja":"進化","ja_alts":["成功"],"node_count":4,"memrise_index":"02-11"}
 ,
 {"code":"0a676a","memrise_level":2,"order_in_level":12,"en":"Failure","en_alts":[],"ja":"失敗","ja_alts":[],"node_count":4,"memrise_index":"02-12"}
 ,
