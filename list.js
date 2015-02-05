@@ -1,8 +1,8 @@
 $(function () {
 	var version = "v1.1.0";
 	//var baseUrl = "//cdn.rawgit.com/Leuconoe/ingress-shaper-glyphs/" + version + "/dist/";
-	var baseUrl = "//rawgit.com/Leuconoe/ingress-shaper-glyphs/tree/master/dist";
-	//var baseUrl = "dist/";
+	//var baseUrl = "//rawgit.com/Leuconoe/ingress-shaper-glyphs/tree/master/dist";
+	var baseUrl = "dist/";
 	var langs = [{
 			"code" : "ja",
 			"local" : "日本語"

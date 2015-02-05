@@ -1,8 +1,8 @@
 $(function () {
 	var version = "v1.1.0";
 	//var baseUrl = "//cdn.rawgit.com/akiraak/ingress-shaper-glyphs/" + version + "/dist/";
-	var baseUrl = "//rawgit.com/Leuconoe/ingress-shaper-glyphs/tree/master/dist";
-	//var baseUrl = "dist/";
+	//var baseUrl = "//rawgit.com/Leuconoe/ingress-shaper-glyphs/tree/master/dist";
+	var baseUrl = "dist/";
 	//var localeName = 'ja';
 	var localeName = 'ko';
 
