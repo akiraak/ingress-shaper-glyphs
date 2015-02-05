@@ -3,8 +3,8 @@ $(function () {
 	//var baseUrl = "//cdn.rawgit.com/akiraak/ingress-shaper-glyphs/" + version + "/dist/";
 	//var baseUrl = "//rawgit.com/Leuconoe/ingress-shaper-glyphs/tree/master/dist";
 	var baseUrl = "dist/";
-	//var localeName = 'ja';
-	var localeName = 'ko';
+	var localeName = 'ja';
+	//var localeName = 'ko';
 
 	var sequences = null;
 	var glyph_infos = null;
