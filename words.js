@@ -1,10 +1,10 @@
 $(function () {
 	var version = "v1.1.0";
-	//var baseUrl = "//cdn.rawgit.com/akiraak/ingress-shaper-glyphs/" + version + "/dist/";
+	//var baseUrl = "//cdn.rawgit.com/Leuconoe/ingress-shaper-glyphs/" + version + "/dist/";
 	//var baseUrl = "//rawgit.com/Leuconoe/ingress-shaper-glyphs/tree/master/dist";
 	var baseUrl = "dist/";
-	var localeName = 'ja';
-	//var localeName = 'ko';
+	//var localeName = 'ja';
+	var localeName = 'ko';
 
 	var sequences = null;
 	var glyph_infos = null;
@@ -41,7 +41,7 @@ $(function () {
 		var count = 0;
 		for (var i = 0; i < sequences.length; i++) {
 			if (count < sequences[i].length) {
-				$table.append('<div class="count-header">' + sequences[i].length + '単語</div>')
+				$table.append('<div class="count-header">' + sequences[i].length + '단어</div>')
 				count = sequences[i].length;
 			}
 			$table.append(build_sequence(sequences[i]));
